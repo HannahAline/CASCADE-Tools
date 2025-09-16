@@ -1,0 +1,70 @@
+CASCADE Domain Dune Offset Tool
+===============================
+
+Author: Hannah A. Henry  
+Email: hahenry@unc.edu  
+ORCID: https://orcid.org/0000-0003-0767-8669  
+GitHub: https://github.com/HannahAline  
+
+Overview
+--------
+This ArcGIS Pro Python Toolbox calculates dune offsets (shoreline-to-dune crest distances) within each CASCADE model domain. 
+Dune offsets are key parameters for simulating overwash, dune migration, and barrier island evolution in CASCADE.
+
+Toolbox Name:
+    cascade_domain_dune_offset.pyt
+
+Tool Name:
+    Calculate Dune Offsets by Domain
+
+Functionality
+-------------
+The tool performs the following steps:
+1. Identifies dune crest locations along transects within each domain.
+2. Measures the horizontal distance (offset) from the shoreline baseline to the nearest dune crest point.  
+3. Associates dune offsets with the unique domain "ID" field.  
+4. Outputs a CSV file of offsets for all transects and domains.
+
+Inputs
+------
+- **Domain Polygons (Feature Layer)**  
+  Polygon layer with a unique "ID" field for each rectangular domain.  
+
+- **Transects (Feature Layer)**  
+  Line features (e.g., 100 m spacing) extending across the barrier island.  
+
+- **Shoreline Baseline (Feature Layer)**  
+  Baseline feature used for shoreline reference.  
+
+- **Dune Crest Features (Feature Layer)**  
+  Point or line features representing dune crest locations.  
+
+- **Output Folder (Folder)**  
+  Directory where the dune offset CSV file will be saved.  
+
+Outputs
+-------
+- **dune_offset_summary.csv**  
+  A CSV file with the following fields:  
+    - DomainID  
+    - TransectID  
+    - DuneOffset (shoreline-to-dune crest distance in meters)  
+
+Example Workflow
+----------------
+Run this tool after generating transects and dune crest datasets. 
+By repeating the analysis with DEMs and shorelines from different years, researchers can assess long-term changes in dune position and shoreline-dune spacing across domains.
+
+Citation and Reuse
+------------------
+If you use this tool in your research, please cite:
+
+> Hannah A. Henry (2025). CASCADE Domain Dune Offset Tool.  
+> University of North Carolina at Chapel Hill.  
+> GitHub: https://github.com/HannahAline  
+> ORCID: https://orcid.org/0000-0003-0767-8669  
+
+License
+-------
+This tool is open-source and freely available for academic and nonprofit use. 
+Please contact the author for other licensing inquiries.
