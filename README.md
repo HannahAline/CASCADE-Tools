@@ -20,8 +20,8 @@ GitHub: [HannahAline](https://github.com/HannahAline)
 
 ### [Domain Dune Offset Tool](dune_offset/README.txt)  
 **Toolbox:** `cascade_domain_dune_offset_tool.pyt`  
-- Calculates shoreline-to-dune crest distances (offsets) for each domain.  
-- Uses shoreline baselines, transects, and dune crest features.  
+- Calculates distance between dune crest and an offshore datum line (offsets) for each domain.  
+- Uses an offshore datum line, transects, and dune crest features.  
 - Generates CSV outputs required for CASCADE overwash and dune evolution modules.  
 
 ---
@@ -34,7 +34,7 @@ GitHub: [HannahAline](https://github.com/HannahAline)
 
 ---
 
-## 🔧 Usage
+## Usage
 Each toolbox is packaged as an ArcGIS Pro Python Toolbox (`.pyt`).  
 Open in ArcGIS Pro → configure input datasets → run the tool → review CSV or raster outputs.  
 
