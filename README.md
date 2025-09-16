@@ -1,6 +1,6 @@
 # CASCADE Tools
 
-Custom ArcGIS Python Toolboxes for preprocessing datasets for the **CASCADE** (Coastal Adaptation to Storms, Climate Change, and Sea Level Rise) barrier island model.  
+Custom ArcGIS Python Toolboxes for preprocessing datasets for the **CASCADE** (CoAStal Community-lAnDscape Evolution) barrier island model.  
 These tools automate critical steps in preparing high-resolution elevation and shoreline datasets, ensuring standardized and reproducible workflows for barrier island geomorphology research.
 
 Developed by [Hannah A. Henry](https://orcid.org/0000-0003-0767-8669), Ph.D. Student, University of North Carolina at Chapel Hill.  
